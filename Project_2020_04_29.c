@@ -3,9 +3,23 @@
 
 #include <stdio.h>
 
- main()
+ main()//判断一个整数是否是回文数
 {
-	printf("Hello World");
+	 int x, y, z = 0;
+	 printf("请输入一个整数:");
+	 scanf("%d",&x);
+	 y = x;
+	 while (y > 0)
+	 {
+		 z = z * 10 + y % 10;
+		 y = y / 10;
+
+	 }
+	 if (z == x)
+		 printf("这个整数是回文数\n");
+	 else
+		 printf("这个整数不是回文数\n");
+
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
